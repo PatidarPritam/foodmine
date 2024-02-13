@@ -11,4 +11,14 @@
     2. Add html
     3. Add css
 
- 
+ 6. Search
+   1. Add method to Food Service 
+   2. Add search route
+   3. Show serach result in Home component 
+   4. Generate Search Component
+      1. Add to home component
+      2. Add ts
+      3. Add html
+      4. Add css 
+
+ 7. Tags Bar     
