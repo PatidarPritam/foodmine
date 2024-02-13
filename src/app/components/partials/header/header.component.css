@@ -1,0 +1,109 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background-color:#453750; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Center the logo and align it to the left */
+.logo {
+    color: #fff; /* Change the text color as needed */
+    text-decoration: none;
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+/* Style the navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px; /* Adjust spacing between menu items as needed */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff; /* Change the text color as needed */
+    text-decoration: none;
+}
+
+/* Style the menu dropdown */
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Change the background color as needed */
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu a {
+    display: block;
+    color: #fff; /* Change the text color as needed */
+    text-decoration: none;
+    margin-bottom: 5px; /* Adjust spacing between menu items as needed */
+}
+
+.menu-container:hover .menu {
+    display: block;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 300px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333; /* Change the background color as needed */
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block;
+    }
+
+    .menu-container {
+        position: relative;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .menu-container:hover .menu {
+        display: block;
+    }
+}
