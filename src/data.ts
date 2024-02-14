@@ -12,7 +12,7 @@ export const sample_foods: Food[] =[
             origins: ['indore'],
             stars: 5.0,
             imageUrl: 'assets/indore.jpg',
-            tags: ['breakFast', 'Poha', 'Jalebi'],
+            tags: ['BreakFast', 'Poha', 'Jalebi'],
           },
         {
         id:'2',
@@ -83,13 +83,15 @@ export const sample_foods: Food[] =[
  ]
 
   export const sample_tags:Tag[]=[
-   { name: 'All', count: 6 },
+    
+    { name: 'All', count: 7 },
+    { name: 'BreakFast', count: 1 },
    { name: 'FastFood', count: 4 },
    { name: 'Pizza', count: 2 },
    { name: 'Lunch', count: 3 },
    { name: 'SlowFood', count: 2 },
    { name: 'Hamburger', count: 1 },
    { name: 'Fry', count: 1 },
-  { name: 'Soup', count: 1 },
+   { name: 'Soup', count: 1 },
 
   ]

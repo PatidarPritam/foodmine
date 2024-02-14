@@ -7,6 +7,7 @@ import { RatingModule } from 'ng-starrating';
 import { SearchComponent } from '../../partials/search/search.component';
 import { TagsComponent } from '../../partials/tags/tags.component';
 
+
 @Component({
   selector: 'app-home',
   standalone: true,
