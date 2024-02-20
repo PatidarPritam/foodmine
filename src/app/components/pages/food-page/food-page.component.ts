@@ -23,7 +23,10 @@ export class FoodPageComponent {
 
     activatedRoute.params.subscribe((params)=>{
 
-      this.food = foodService.getFoodById(params.id);
+
+     foodService.getFoodById(params.id).subscribe((serverFood)=>{
+       this.food = serverFood;
+     });
     })
 
   
