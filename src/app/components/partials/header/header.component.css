@@ -1,109 +1,66 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
+header{
+    position: relative;
+    background: white;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Style the header */
-header {
-    background-color:#453750; /* Change the background color as needed */
-    color: #fff; /* Change the text color as needed */
-    padding: 10px 0;
-}
-
-.container {
-    max-width: 1200px;
+    border-bottom: 1px solid #e72929;
+  }
+  
+  a{
+    color: #af1313;
+  }
+  
+  a:hover{
+    background:#e72929;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .container{
     margin: 0 auto;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-/* Center the logo and align it to the left */
-.logo {
-    color: #fff; /* Change the text color as needed */
-    text-decoration: none;
-    font-size: 24px; /* Adjust font size as needed */
-}
-
-/* Style the navigation */
-nav ul {
-    list-style-type: none;
+  }
+  
+  a.logo{
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  ul{
     display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    margin-right: 20px; /* Adjust spacing between menu items as needed */
-}
-
-nav ul li:last-child {
-    margin-right: 0;
-}
-
-nav ul li a {
-    color: #fff; /* Change the text color as needed */
-    text-decoration: none;
-}
-
-/* Style the menu dropdown */
-.menu {
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  ul a{
+    padding: 1rem;
+    display: inline-block;
+  }
+  
+  a span{
+    background: #ff4d4d;
+    color: white;
+    padding: 0.1rem 0.45rem;
+    border-radius: 100rem;
+    font-size:0.9rem;
+  }
+  
+  .menu-container{
+    position: relative;
+  }
+  
+  .menu{
+    position:absolute;
+    z-index:1;
+    background:whitesmoke;
     display: none;
-    position: absolute;
-    background-color: #333; /* Change the background color as needed */
-    padding: 10px;
-    z-index: 1;
-}
-
-.menu a {
+  }
+  
+  .menu-container:hover .menu{
     display: block;
-    color: #fff; /* Change the text color as needed */
-    text-decoration: none;
-    margin-bottom: 5px; /* Adjust spacing between menu items as needed */
-}
-
-.menu-container:hover .menu {
-    display: block;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 300px) {
-    .container {
-        padding: 0 10px;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333; /* Change the background color as needed */
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        padding: 10px;
-        display: block;
-    }
-
-    .menu-container {
-        position: relative;
-    }
-
-    .menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-    }
-
-    .menu-container:hover .menu {
-        display: block;
-    }
-}
+  }
+  
+  .menu a{
+    width: 100%;
+    min-width:8rem;
+  }
