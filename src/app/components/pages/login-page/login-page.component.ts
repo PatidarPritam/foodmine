@@ -4,13 +4,17 @@ import { TitleComponent } from '../../partials/title/title.component';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../../../services/user.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { InputContainerComponent } from "../../partials/input-container/input-container.component";
+import { InputValidationComponent } from "../../partials/input-validation/input-validation.component";
+import { TextInputComponent } from "../../partials/text-input/text-input.component";
+import { DefaultButtonComponent } from '../../partials/default-button/default-button.component';
 
 @Component({
-  selector: 'app-login-page',
-  standalone: true,
-  imports: [ReactiveFormsModule,TitleComponent,CommonModule],
-  templateUrl: './login-page.component.html',
-  styleUrl: './login-page.component.css'
+    selector: 'app-login-page',
+    standalone: true,
+    templateUrl: './login-page.component.html',
+    styleUrl: './login-page.component.css',
+    imports: [ReactiveFormsModule, TitleComponent, CommonModule, InputContainerComponent, InputValidationComponent, TextInputComponent,DefaultButtonComponent]
 })
 
 export class LoginPageComponent {
