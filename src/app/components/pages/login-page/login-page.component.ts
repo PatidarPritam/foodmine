@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { TitleComponent } from '../../partials/title/title.component';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../../../services/user.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { InputContainerComponent } from "../../partials/input-container/input-container.component";
 import { InputValidationComponent } from "../../partials/input-validation/input-validation.component";
 import { TextInputComponent } from "../../partials/text-input/text-input.component";
@@ -14,7 +14,8 @@ import { DefaultButtonComponent } from '../../partials/default-button/default-bu
     standalone: true,
     templateUrl: './login-page.component.html',
     styleUrl: './login-page.component.css',
-    imports: [ReactiveFormsModule, TitleComponent, CommonModule, InputContainerComponent, InputValidationComponent, TextInputComponent,DefaultButtonComponent]
+    imports: [ReactiveFormsModule, TitleComponent, CommonModule, 
+      InputContainerComponent, InputValidationComponent, TextInputComponent,DefaultButtonComponent,RouterOutlet,RouterLink]
 })
 
 export class LoginPageComponent {
